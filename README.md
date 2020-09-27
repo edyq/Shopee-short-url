@@ -1,5 +1,4 @@
 # Shopee-short-url
-# Short URL
 
 ## Application Source
 All application codes should be inside `src/` folder.

@@ -1,0 +1,60 @@
+ERROR 2020-09-24 11:37:54,353 root:56 Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shorturl/src/views/shorten.py", line 21, in create_short_url
+    short_key = self.short_url_manager.create(url)
+  File "/home/shorturl/src/managers/default.py", line 29, in create
+    return self._generate_new_short_key(url)
+  File "/home/shorturl/src/managers/default.py", line 32, in _generate_new_short_key
+    short_key = self.short_key_generator.generate(url)
+  File "/home/shorturl/src/managers/generators/default.py", line 7, in generate
+    raise NotImplementedError
+NotImplementedError
+
+ERROR 2020-09-24 11:37:54,417 root:56 Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shorturl/src/views/shorten.py", line 21, in create_short_url
+    short_key = self.short_url_manager.create(url)
+  File "/home/shorturl/src/managers/default.py", line 29, in create
+    return self._generate_new_short_key(url)
+  File "/home/shorturl/src/managers/default.py", line 32, in _generate_new_short_key
+    short_key = self.short_key_generator.generate(url)
+  File "/home/shorturl/src/managers/generators/default.py", line 7, in generate
+    raise NotImplementedError
+NotImplementedError
+
+ERROR 2020-09-24 11:37:54,452 root:56 Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shorturl/src/views/shorten.py", line 21, in create_short_url
+    short_key = self.short_url_manager.create(url)
+  File "/home/shorturl/src/managers/default.py", line 29, in create
+    return self._generate_new_short_key(url)
+  File "/home/shorturl/src/managers/default.py", line 32, in _generate_new_short_key
+    short_key = self.short_key_generator.generate(url)
+  File "/home/shorturl/src/managers/generators/default.py", line 7, in generate
+    raise NotImplementedError
+NotImplementedError
+
+ERROR 2020-09-24 11:37:54,535 root:56 Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shorturl/src/views/shorten.py", line 21, in create_short_url
+    short_key = self.short_url_manager.create(url)
+  File "/home/shorturl/src/managers/default.py", line 29, in create
+    return self._generate_new_short_key(url)
+  File "/home/shorturl/src/managers/default.py", line 32, in _generate_new_short_key
+    short_key = self.short_key_generator.generate(url)
+  File "/home/shorturl/src/managers/generators/default.py", line 7, in generate
+    raise NotImplementedError
+NotImplementedError
+

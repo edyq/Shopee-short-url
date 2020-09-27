@@ -1,0 +1,282 @@
+[2020-09-24 11:36:11 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 11:36:11 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 11:36:11 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 11:36:11 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 11:36:11 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 11:36:11 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 11:56:07 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 11:56:07 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 11:56:08 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 11:56:08 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 11:56:08 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 11:56:08 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 11:56:08 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 11:56:08 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:03:36 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:03:36 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:03:37 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:03:37 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:03:37 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:03:37 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:03:37 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:03:37 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:04:33 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:04:33 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:04:34 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:04:34 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:04:34 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:04:34 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:04:34 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:04:34 +0000] [10] [INFO] Booting worker with pid: 10
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 209, in run
+    self.sleep()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 357, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2020-09-24 12:09:55 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:09:55 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:09:55 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:09:55 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:09:55 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:09:55 +0000] [9] [INFO] Booting worker with pid: 9
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 209, in run
+    self.sleep()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 357, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2020-09-24 12:11:00 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:11:00 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:11:00 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:11:00 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:11:00 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:11:00 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:31:25 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:31:27 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:31:28 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:31:28 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:31:28 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:31:28 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:31:28 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:31:28 +0000] [10] [INFO] Booting worker with pid: 10
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 209, in run
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 357, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2020-09-24 12:41:38 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:41:38 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:41:38 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:41:38 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:41:38 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:41:38 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:41:41 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:41:41 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-09-24 12:46:45 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:46:45 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:46:45 +0000] [1] [INFO] Using worker: sync
+[2020-09-24 12:46:45 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:46:45 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-09-24 12:46:45 +0000] [11] [INFO] Booting worker with pid: 11
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 209, in run
+    self.sleep()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 357, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2020-09-24 12:49:33 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:49:33 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:49:33 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:49:33 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:49:33 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:49:33 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-09-24 12:49:36 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:49:36 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-09-24 12:49:50 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:49:50 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:49:50 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:49:50 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:49:50 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:49:50 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-09-24 12:53:36 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:53:37 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:53:38 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:53:38 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:53:38 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:53:38 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:53:38 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:53:38 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-09-24 12:54:04 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:54:05 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:54:37 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:54:37 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:54:37 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:54:37 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:54:37 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:54:37 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-09-24 12:55:14 +0000] [1] [INFO] Handling signal: term
+[2020-09-24 12:55:15 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:55:24 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:55:24 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:55:24 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:55:24 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:55:24 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:55:24 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:55:27 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:55:27 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-09-24 12:56:13 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-24 12:56:13 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-24 12:56:13 +0000] [1] [INFO] Using worker: gevent
+[2020-09-24 12:56:13 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-24 12:56:13 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-24 12:56:13 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-09-24 12:56:15 +0000] [1] [INFO] Shutting down: Master
+[2020-09-24 12:56:15 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-09-27 10:11:55 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-09-27 10:11:55 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-09-27 10:11:55 +0000] [1] [INFO] Using worker: gevent
+[2020-09-27 10:11:55 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-09-27 10:11:56 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-09-27 10:11:56 +0000] [9] [INFO] Booting worker with pid: 9
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 209, in run
+    self.sleep()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 357, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
